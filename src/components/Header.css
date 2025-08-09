@@ -1,0 +1,161 @@
+.site-header {
+  background-color: rgb(122, 202, 41);
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 100px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.company-name {
+  font-size: 40px;
+  color: black;
+  font-weight: bold;
+  margin: 0;
+}
+
+.company-name1 {
+  font-size: 24px;
+  color: black;
+  font-weight: bold;
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links h2 {
+  font-size: 16px;
+  align-items: center;
+  color: black;
+  margin: 0;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-links h2:hover {
+  color: white;
+}
+
+.search-bar {
+  flex-grow: 1;
+  margin: 10px 20px 0; /* Added margin-top: 10px to move search bar down */
+  max-width: 600px;
+}
+
+@media (max-width: 768px) {
+  .site-header {
+    flex-wrap: wrap;
+    padding: 10px 15px;
+  }
+
+  .logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+  .search-bar {
+    width: 100%;
+    margin: 10px 0; /* Maintain margin-top for consistency in responsive view */
+    order: 3;
+  }
+
+  .nav-links {
+    flex: 1;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .nav-links h2 {
+    font-size: 16px;
+  }
+.company-name, .company-name1 {
+  margin: 0;
+  padding: 0;
+  line-height: 1; /* optional: keeps them close together */
+}
+
+  .logo {
+    width: 80px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links h2 {
+  cursor: pointer;
+  margin: 0 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.nav-links h2:hover {
+  color: #007bff;
+}
+
+.nav-links .all-products {
+  display: inline-block;
+}
+
+
+  .logo {
+    width: 60px;
+    height: 50px;
+  }
+}
+.profile-img {
+  width: 40px; /* Matches approximate height of h2 text */
+  height: 60px;
+  border-radius: 70%;
+  object-fit:contain;
+  cursor: pointer;
+}
+
+.profile-img:hover {
+  filter: brightness(1.10); /* Subtle hover effect similar to text */
+  
+}
+.company-name-wrapper {
+  display: flex;
+  align-items: baseline;
+  gap: 0; /* remove space between H and omiGo */
+}
+.company-name, .company-name1 {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: bold;
+  color: black;
+}
+.nav-link-logout {
+  font-size: 16px;
+  color: black;
+  margin: 0;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-link-logout:hover {
+  color: white;
+}
